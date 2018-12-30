@@ -1,0 +1,132 @@
+{
+  "components": [
+    {
+      "tag": "agc-pelvic-birth-weight-ratio",
+      "dependencies": [],
+      "componentClass": "AgcPelvicBirthWeightRatio",
+      "componentPath": "components/agc-pelvic-birth-weight-ratio/agc-pelvic-birth-weight-ratio.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "mode",
+          "type": "String",
+          "attr": "mode"
+        },
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        },
+        {
+          "name": "tract",
+          "type": "String",
+          "attr": "tract"
+        },
+        {
+          "name": "units",
+          "type": "Any",
+          "attr": "units"
+        }
+      ],
+      "states": [
+        {
+          "name": "cache"
+        },
+        {
+          "name": "currentStep"
+        },
+        {
+          "name": "results"
+        },
+        {
+          "name": "submitted"
+        }
+      ],
+      "events": [
+        {
+          "event": "agcCalculated"
+        },
+        {
+          "event": "agcStepChanged"
+        }
+      ]
+    },
+    {
+      "tag": "agc-pelvic-birth-weight-ratio-progress",
+      "dependencies": [],
+      "componentClass": "AgcPelvicBirthWeightRatioProgress",
+      "componentPath": "components/agc-pelvic-birth-weight-ratio-progress/agc-pelvic-birth-weight-ratio-progress.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "currentStep"
+        }
+      ]
+    },
+    {
+      "tag": "agc-pelvic-birth-weight-ratio-results",
+      "dependencies": [],
+      "componentClass": "AgcPelvicBirthWeightRatioResults",
+      "componentPath": "components/agc-pelvic-birth-weight-ratio-results/agc-pelvic-birth-weight-ratio-results.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-pelvic-birth-weight-ratio-results-placeholder",
+      "dependencies": [],
+      "componentClass": "AgcPelvicBirthWeightRatioResultsPlaceholder",
+      "componentPath": "components/agc-pelvic-birth-weight-ratio-results-placeholder/agc-pelvic-birth-weight-ratio-results-placeholder.js",
+      "styles": {}
+    },
+    {
+      "tag": "agc-pelvic-birth-weight-ratio-summary",
+      "dependencies": [],
+      "componentClass": "AgcPelvicBirthWeightRatioSummary",
+      "componentPath": "components/agc-pelvic-birth-weight-ratio-summary/agc-pelvic-birth-weight-ratio-summary.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}
